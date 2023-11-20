@@ -23,7 +23,9 @@ function crear(e){
         libros.push(libro)
         localStorage.setItem("Libros", JSON.stringify(libros))
     }
+    //Leer los libros
     leer();
+
     document.getElementById("formulario").reset();
     console.log("Libro guardado correctamente");
     e.preventDefault()
@@ -52,3 +54,4 @@ function leer(){
 }
 
 leer();
+
